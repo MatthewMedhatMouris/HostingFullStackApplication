@@ -6,7 +6,7 @@
   "scripts": {
     "ng": "ng",
     "start": " ng serve",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider ng build",
+    "build": "ng build --force",
     "deploy": "chmod +x bin/deploy.sh && bin/deploy.sh",
     "test": "ng test --watch=false --browsers ChromeHeadless",
     "lint": "ng lint --fix",
