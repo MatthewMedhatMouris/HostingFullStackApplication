@@ -21,7 +21,7 @@ This application is provided to you as an alternative starter project if you do 
 ### Dependencies
 
 ```
-- Node v14.15.1 (LTS) or more recent. While older versions can work it is advisable to keep node to latest LTS version
+- Node v14.15.0 (LTS) or more recent. While older versions can work it is advisable to keep node to latest LTS version
 
 - npm 6.14.8 (LTS) or more recent, Yarn can work but was not tested for this project
 
@@ -42,6 +42,30 @@ Provision the necessary AWS services needed for running the application:
 1. Export the ENV variables needed or use a package like [dotnev](https://www.npmjs.com/package/dotenv)/.
 1. From the root of the repo, navigate udagram-api folder `cd starter/udagram-api` to install the node_modules `npm install`. After installation is done start the api in dev mode with `npm run dev`.
 1. Without closing the terminal in step 1, navigate to the udagram-frontend `cd starter/udagram-frontend` to intall the node_modules `npm install`. After installation is done start the api in dev mode with `npm run start`.
+
+
+### Environment Variables
+- create file .env in udagram-api folder 
+```
+POSTGRES_HOST = ***
+POSTGRES_USERNAME = ***
+POSTGRES_DB =  ***
+POSTGRES_PASSWORD = *** 
+POSTGRES_PORT = 5432
+PORT = 3000
+RDS_DIALECT = postgres
+AWS_DEFAULT_REGION = us-east-1
+AWS_PROFILE = default
+AWS_BUCKET = ***
+EB_APP = ***
+EB_ENV = ***
+URL = "http://localhost" 
+JWT_SECRET = '***'
+AWS_ACCESS_KEY_ID = ***
+AWS_SECRET_ACCESS_KEY = ***
+```
+
+
 
 ## Testing
 
